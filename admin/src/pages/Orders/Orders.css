@@ -1,0 +1,28 @@
+.orders-page h2 { font-size: 1.5rem; color: #1a1a2e; }
+.orders-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.del-all-btn { background: #fce4e4; color: #c62828; border: none; padding: 10px 20px; border-radius: 10px; font-weight: 600; }
+.orders-list { display: flex; flex-direction: column; gap: 14px; }
+.order-card { background: #fff; border-radius: 14px; padding: 18px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.order-card-left { display: flex; gap: 16px; align-items: flex-start; flex: 1; }
+.order-icon { font-size: 2rem; }
+.order-customer { font-weight: 700; font-size: 0.95rem; color: #1a1a2e; margin-bottom: 2px; }
+.order-addr { font-size: 0.82rem; color: #888; margin-bottom: 4px; }
+.order-items { font-size: 0.85rem; color: #555; margin-bottom: 8px; }
+.order-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.order-amount { font-weight: 700; color: #FF6B35; font-size: 0.9rem; }
+.order-pay { padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.pay-cod { background: #FFF3E0; color: #E65100; }
+.pay-razorpay { background: #E3F2FD; color: #1565C0; }
+.order-paid { padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.order-paid.yes { background: #e8f5e9; color: #2e7d32; }
+.order-paid.no { background: #fce4e4; color: #c62828; }
+.order-coupon { background: #f3e5f5; color: #6A1B9A; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.status-select { border: 1.5px solid #eee; border-radius: 10px; padding: 10px 14px; font-size: 0.88rem; outline: none; min-width: 160px; cursor: pointer; }
+.status-select:focus { border-color: #FF6B35; }
+.confirm-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; z-index: 999; }
+.confirm-box { background: #fff; border-radius: 16px; padding: 32px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
+.confirm-box h3 { font-size: 1.2rem; color: #c62828; margin-bottom: 8px; }
+.confirm-box p { color: #666; margin-bottom: 24px; }
+.confirm-btns { display: flex; gap: 14px; justify-content: center; }
+.confirm-btns button { padding: 10px 24px; border-radius: 8px; font-weight: 600; border: 1.5px solid #ddd; background: #fff; }
+.confirm-del { background: #c62828 !important; color: #fff; border-color: #c62828 !important; }

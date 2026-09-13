@@ -1,0 +1,15 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #fff; color: #333; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; }
+:root {
+  --primary: #FF6B35;
+  --primary-dark: #e85520;
+  --secondary: #1a1a2e;
+  --accent: #f7c59f;
+  --light-bg: #fff9f6;
+  --border: #eee;
+  --text-light: #777;
+  --success: #2e7d32;
+  --radius: 12px;
+}

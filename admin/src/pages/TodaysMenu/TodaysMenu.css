@@ -1,0 +1,24 @@
+.todays-menu-page h2 { font-size: 1.5rem; color: #1a1a2e; margin-bottom: 4px; }
+.todays-menu-page > p { color: #888; font-size: 0.9rem; }
+.tm-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; gap: 20px; }
+.tm-header > div > p { color: #888; font-size: 0.88rem; margin-top: 4px; }
+.menu-active-badge { display: inline-block; margin-top: 8px; background: #e8f5e9; color: #2e7d32; padding: 5px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600; }
+.tm-actions { display: flex; gap: 10px; flex-shrink: 0; }
+.btn-outline { border: 1.5px solid #ddd; background: #fff; padding: 9px 16px; border-radius: 8px; font-weight: 600; font-size: 0.85rem; color: #555; }
+.btn-outline.red { border-color: #c62828; color: #c62828; }
+.btn-save { background: #FF6B35; color: #fff; border: none; padding: 9px 20px; border-radius: 8px; font-weight: 700; }
+.btn-save:disabled { opacity: 0.7; }
+.tm-selected-count { background: #FFF5F0; color: #FF6B35; font-weight: 600; font-size: 0.88rem; padding: 10px 16px; border-radius: 8px; margin-bottom: 24px; border: 1px solid #ffe0d0; }
+.tm-category { margin-bottom: 28px; }
+.tm-category h3 { font-size: 1rem; color: #1a1a2e; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #f0f0f0; }
+.tm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 14px; }
+.tm-item { background: #fff; border: 2px solid #eee; border-radius: 12px; overflow: hidden; cursor: pointer; transition: all 0.2s; position: relative; }
+.tm-item:hover { border-color: #FF6B35; }
+.tm-item.selected { border-color: #FF6B35; background: #FFF5F0; }
+.tm-item.oos { opacity: 0.5; }
+.tm-item-check { position: absolute; top: 8px; right: 8px; font-size: 1.1rem; }
+.tm-item img { width: 100%; height: 110px; object-fit: cover; }
+.tm-item-info { padding: 10px; }
+.tm-item-name { font-size: 0.85rem; font-weight: 600; color: #1a1a2e; }
+.tm-item-price { font-size: 0.8rem; color: #FF6B35; margin-top: 2px; }
+.tm-oos { font-size: 0.72rem; color: #c62828; font-weight: 600; }

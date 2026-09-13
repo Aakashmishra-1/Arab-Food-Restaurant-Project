@@ -1,0 +1,43 @@
+.food-display { padding: 20px 5% 60px; }
+.search-result-label { color: #666; margin-bottom: 16px; font-size: 0.95rem; }
+.food-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px; }
+.no-results { text-align: center; padding: 60px 20px; color: #999; font-size: 1.1rem; }
+
+.food-section { margin-bottom: 48px; }
+.food-section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.section-emoji { font-size: 1.4rem; }
+.section-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FF6B35;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-color: #FF6B35;
+  text-underline-offset: 4px;
+}
+.section-line {
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(to right, #FF6B35aa, transparent);
+  border-radius: 2px;
+}
+
+/* ── Added fixes ── */
+.section-description {
+  font-size: 13px;
+  color: #888;
+  margin: -6px 0 14px 36px;
+  font-style: italic;
+}
+.section-empty {
+  font-size: 14px;
+  color: #bbb;
+  font-style: italic;
+  padding: 6px 0 20px 36px;
+}

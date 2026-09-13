@@ -1,0 +1,13 @@
+.popup-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 2000; display: flex; align-items: center; justify-content: center; }
+.popup-box { background: #fff; border-radius: 16px; padding: 40px 36px; width: 100%; max-width: 400px; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+.popup-close { position: absolute; top: 14px; right: 18px; background: none; border: none; font-size: 1.2rem; color: #999; }
+.popup-box h2 { font-size: 1.6rem; color: #1a1a2e; margin-bottom: 4px; }
+.popup-subtitle { color: #FF6B35; font-weight: 600; margin-bottom: 24px; font-size: 0.9rem; }
+.popup-box form { display: flex; flex-direction: column; gap: 14px; }
+.popup-box input { border: 1.5px solid #ddd; border-radius: 10px; padding: 12px 14px; font-size: 0.95rem; outline: none; transition: border 0.2s; }
+.popup-box input:focus { border-color: #FF6B35; }
+.popup-box button[type=submit] { background: #FF6B35; color: #fff; border: none; padding: 13px; border-radius: 10px; font-size: 1rem; font-weight: 600; transition: background 0.2s; margin-top: 4px; }
+.popup-box button[type=submit]:hover { background: #e85520; }
+.popup-box button:disabled { opacity: 0.7; }
+.popup-toggle { text-align: center; margin-top: 18px; font-size: 0.9rem; color: #666; }
+.popup-toggle span { color: #FF6B35; font-weight: 600; cursor: pointer; }

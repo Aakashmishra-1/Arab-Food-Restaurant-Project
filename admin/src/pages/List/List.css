@@ -1,0 +1,109 @@
+/* ── Page header ─────────────────────────────────── */
+.list-page-header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+.list-page-header h2 { font-size: 1.5rem; color: #1a1a2e; }
+.list-count { background: #FFF5F0; color: #FF6B35; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; }
+.list-loading { padding: 60px; text-align: center; color: #888; }
+.list-empty { background: #fff; border-radius: 16px; padding: 60px; text-align: center; color: #aaa; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.list-empty p { font-size: 1rem; margin-bottom: 6px; }
+
+/* ── Table ───────────────────────────────────────── */
+.list-table { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.list-header { display: grid; grid-template-columns: 64px 1.5fr 1fr 80px 1.4fr 130px 100px 160px; gap: 12px; padding: 14px 16px; background: #f8f9ff; font-size: 0.78rem; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+.list-row { display: grid; grid-template-columns: 64px 1.5fr 1fr 80px 1.4fr 130px 100px 160px; gap: 12px; padding: 14px 16px; border-top: 1px solid #f0f0f0; align-items: center; font-size: 0.88rem; transition: background 0.1s; }
+.list-row:hover { background: #fafafa; }
+.list-row.oos-row { opacity: 0.6; }
+.list-row img { width: 56px; height: 56px; border-radius: 10px; object-fit: cover; }
+.item-name { font-weight: 700; color: #1a1a2e; }
+.item-cat-badge { background: #f0f0ff; color: #5c35cc; padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; text-align: center; }
+.item-price { font-weight: 700; color: #FF6B35; }
+.item-variants { font-size: 0.78rem; color: #777; }
+.no-variant { color: #ccc; }
+.item-rating { font-size: 0.82rem; color: #555; }
+.stock-btn { padding: 6px 10px; border: none; border-radius: 20px; font-size: 0.78rem; font-weight: 600; cursor: pointer; transition: opacity 0.2s; white-space: nowrap; }
+.stock-btn.in-stock { background: #e8f5e9; color: #2e7d32; }
+.stock-btn.out-stock { background: #fce4e4; color: #c62828; }
+
+/* ── Action buttons ─────────────────────────────── */
+.action-btns { display: flex; gap: 8px; align-items: center; }
+.edit-btn { background: #EEF2FF; color: #3730a3; border: none; padding: 7px 13px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: background 0.15s; }
+.edit-btn:hover { background: #e0e7ff; }
+.remove-btn { background: #fce4e4; color: #c62828; border: none; padding: 7px 13px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; cursor: pointer; white-space: nowrap; transition: background 0.15s; }
+.remove-btn:hover { background: #ffcdd2; }
+
+/* ── Edit Modal overlay ─────────────────────────── */
+.modal-overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+  z-index: 1000; display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+}
+.edit-modal {
+  background: #fff; border-radius: 20px; width: 100%; max-width: 780px;
+  max-height: 90vh; display: flex; flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.18);
+  animation: modalIn 0.2s ease;
+}
+@keyframes modalIn { from { opacity: 0; transform: scale(0.96) translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* ── Modal header ───────────────────────────────── */
+.edit-modal-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px; border-bottom: 1px solid #f0f0f0;
+}
+.edit-modal-header h3 { font-size: 1.15rem; color: #1a1a2e; }
+.modal-close-btn {
+  background: #f5f5f5; border: none; width: 32px; height: 32px;
+  border-radius: 50%; font-size: 1rem; color: #666; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.15s;
+}
+.modal-close-btn:hover { background: #ffe0d0; color: #FF6B35; }
+
+/* ── Modal body ─────────────────────────────────── */
+.edit-modal-body {
+  display: grid; grid-template-columns: 180px 1fr; gap: 24px;
+  padding: 24px; overflow-y: auto; flex: 1;
+}
+
+/* Image section */
+.edit-image-section { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.edit-preview-img { width: 160px; height: 160px; object-fit: cover; border-radius: 14px; border: 2px solid #eee; }
+.change-img-btn {
+  background: #FFF5F0; color: #FF6B35; border: 1.5px solid #FF6B35;
+  padding: 8px 16px; border-radius: 8px; font-size: 0.82rem; font-weight: 600;
+  cursor: pointer; text-align: center; transition: background 0.15s;
+}
+.change-img-btn:hover { background: #ffe0d0; }
+.new-img-name { font-size: 0.75rem; color: #2e7d32; text-align: center; word-break: break-all; }
+
+/* Fields section */
+.edit-fields { display: flex; flex-direction: column; gap: 14px; }
+.edit-fields label { font-size: 0.83rem; font-weight: 600; color: #555; display: flex; flex-direction: column; gap: 5px; }
+.edit-fields input, .edit-fields textarea, .edit-fields select {
+  border: 1.5px solid #ddd; border-radius: 10px; padding: 10px 12px;
+  font-size: 0.92rem; outline: none; font-family: inherit; transition: border-color 0.2s;
+}
+.edit-fields input:focus, .edit-fields textarea:focus, .edit-fields select:focus { border-color: #FF6B35; }
+.edit-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+/* Variants */
+.edit-variants-section { border: 1.5px solid #eee; border-radius: 12px; padding: 14px; background: #fafafa; }
+.edit-variants-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.edit-variants-header h4 { font-size: 0.88rem; color: #1a1a2e; }
+.edit-variants-header h4 span { font-weight: 400; color: #aaa; }
+.edit-variants-header button { background: #FFF5F0; color: #FF6B35; border: 1px solid #FF6B35; padding: 6px 12px; border-radius: 8px; font-weight: 600; font-size: 0.78rem; }
+.edit-variant-row { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+.edit-variant-row select, .edit-variant-row input { flex: 1; border: 1.5px solid #ddd; border-radius: 8px; padding: 8px 10px; font-size: 0.85rem; outline: none; background: #fff; }
+.edit-variant-row select:focus, .edit-variant-row input:focus { border-color: #FF6B35; }
+.rm-variant-btn { background: #fce4e4; color: #c62828; border: none; width: 30px; height: 30px; border-radius: 8px; font-size: 0.85rem; flex-shrink: 0; cursor: pointer; }
+.no-variant-msg { font-size: 0.78rem; color: #aaa; text-align: center; padding: 6px 0; }
+
+/* ── Modal footer ───────────────────────────────── */
+.edit-modal-footer {
+  display: flex; justify-content: flex-end; gap: 12px;
+  padding: 18px 24px; border-top: 1px solid #f0f0f0;
+}
+.cancel-btn { background: #f5f5f5; color: #555; border: none; padding: 11px 22px; border-radius: 10px; font-weight: 600; font-size: 0.92rem; cursor: pointer; }
+.cancel-btn:hover { background: #eee; }
+.save-btn { background: #FF6B35; color: #fff; border: none; padding: 11px 26px; border-radius: 10px; font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: background 0.2s; }
+.save-btn:hover { background: #e85520; }
+.save-btn:disabled { opacity: 0.7; cursor: not-allowed; }

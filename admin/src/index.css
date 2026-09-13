@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #f8f9ff; color: #333; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; }
+:root {
+  --primary: #FF6B35;
+  --primary-dark: #e85520;
+  --sidebar-bg: #1a1a2e;
+  --sidebar-active: #FF6B35;
+}
+.admin-app { min-height: 100vh; display: flex; flex-direction: column; }
+.admin-body { display: flex; flex: 1; margin-top: 60px; }
+.admin-main { flex: 1; padding: 28px; overflow-y: auto; }

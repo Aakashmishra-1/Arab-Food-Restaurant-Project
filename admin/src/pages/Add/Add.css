@@ -1,0 +1,28 @@
+.add-page h2 { font-size: 1.5rem; color: #1a1a2e; margin-bottom: 24px; }
+.add-form { background: #fff; border-radius: 16px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); display: grid; grid-template-columns: 240px 1fr; gap: 32px; }
+.img-upload-label { display: flex; align-items: center; justify-content: center; width: 220px; height: 220px; border: 2px dashed #ddd; border-radius: 14px; cursor: pointer; overflow: hidden; transition: border-color 0.2s; }
+.img-upload-label:hover { border-color: #FF6B35; }
+.img-upload-label img { width: 100%; height: 100%; object-fit: cover; }
+.img-placeholder { text-align: center; color: #aaa; }
+.img-placeholder p { font-size: 0.82rem; margin-top: 8px; }
+.img-name { font-size: 0.78rem; color: #2e7d32; margin-top: 8px; text-align: center; word-break: break-all; }
+.add-fields { display: flex; flex-direction: column; gap: 16px; }
+.add-fields label { font-size: 0.85rem; font-weight: 600; color: #555; display: flex; flex-direction: column; gap: 6px; }
+.add-fields input, .add-fields textarea, .add-fields select { border: 1.5px solid #ddd; border-radius: 10px; padding: 11px 14px; font-size: 0.92rem; outline: none; font-family: inherit; transition: border-color 0.2s; }
+.add-fields input:focus, .add-fields textarea:focus, .add-fields select:focus { border-color: #FF6B35; }
+.add-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.variants-section { border: 1.5px solid #eee; border-radius: 12px; padding: 16px; background: #fafafa; }
+.variants-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
+.variants-header h4 { font-size: 0.9rem; color: #1a1a2e; margin-bottom: 2px; }
+.variants-header h4 span { font-weight: 400; color: #aaa; }
+.variants-header > div > p { font-size: 0.78rem; color: #aaa; }
+.variants-header button { background: #FFF5F0; color: #FF6B35; border: 1px solid #FF6B35; padding: 7px 14px; border-radius: 8px; font-weight: 600; font-size: 0.82rem; white-space: nowrap; }
+.variant-row { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+.variant-row select, .variant-row input { flex: 1; border: 1.5px solid #ddd; border-radius: 8px; padding: 9px 12px; font-size: 0.88rem; outline: none; background: #fff; }
+.variant-row select:focus, .variant-row input:focus { border-color: #FF6B35; }
+.rm-variant { background: #fce4e4; color: #c62828; border: none; width: 32px; height: 32px; border-radius: 8px; font-size: 0.9rem; flex-shrink: 0; }
+.no-variant-msg { font-size: 0.8rem; color: #aaa; text-align: center; padding: 8px 0; }
+.add-submit-btn { background: #FF6B35; color: #fff; border: none; padding: 14px; border-radius: 12px; font-size: 1rem; font-weight: 700; transition: background 0.2s; }
+.add-submit-btn:hover { background: #e85520; }
+.add-submit-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+@media(max-width: 768px) { .add-form { grid-template-columns: 1fr; } .img-upload-label { width: 100%; height: 180px; } }

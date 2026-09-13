@@ -1,0 +1,32 @@
+.admin-sidebar { width: 220px; min-height: calc(100vh - 60px); background: #1a1a2e; padding: 20px 0; flex-shrink: 0; }
+.sidebar-link { display: flex; align-items: center; gap: 12px; padding: 14px 22px; color: #aaa; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; border-left: 3px solid transparent; }
+.sidebar-link:hover { background: rgba(255,255,255,0.05); color: #fff; }
+.sidebar-link.active { background: rgba(255,107,53,0.1); color: #FF6B35; border-left-color: #FF6B35; }
+
+/* ── Order notification badge ── */
+.sidebar-badge {
+  background: #e53935;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0 5px;
+  animation: badgePop 0.3s ease;
+}
+@keyframes badgePop {
+  0%   { transform: scale(0); }
+  80%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-label { flex: 1; }

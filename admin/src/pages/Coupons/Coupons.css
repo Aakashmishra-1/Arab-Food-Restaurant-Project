@@ -1,0 +1,22 @@
+.coupons-page h2 { font-size: 1.5rem; color: #1a1a2e; margin-bottom: 24px; }
+.coupon-form-card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); margin-bottom: 28px; }
+.coupon-form-card h3 { font-size: 1rem; color: #1a1a2e; margin-bottom: 18px; }
+.coupon-form { display: flex; flex-direction: column; gap: 14px; }
+.coupon-form-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.coupon-form label { font-size: 0.82rem; font-weight: 600; color: #555; display: flex; flex-direction: column; gap: 5px; }
+.coupon-form input, .coupon-form select { border: 1.5px solid #ddd; border-radius: 10px; padding: 10px 12px; font-size: 0.9rem; outline: none; font-family: inherit; }
+.coupon-form input:focus, .coupon-form select:focus { border-color: #FF6B35; }
+.coupon-form button { background: #FF6B35; color: #fff; border: none; padding: 12px 28px; border-radius: 10px; font-weight: 700; align-self: flex-start; font-size: 0.95rem; }
+.coupon-form button:disabled { opacity: 0.7; }
+.no-coupons { color: #aaa; text-align: center; padding: 40px; }
+.coupon-table { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.coupon-table-header { display: grid; grid-template-columns: 1.2fr 1fr 1fr 0.8fr 1fr 1fr 0.6fr; gap: 12px; padding: 12px 18px; background: #f8f9ff; font-size: 0.78rem; font-weight: 700; color: #888; text-transform: uppercase; }
+.coupon-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr 0.8fr 1fr 1fr 0.6fr; gap: 12px; padding: 14px 18px; border-top: 1px solid #f0f0f0; align-items: center; font-size: 0.88rem; transition: background 0.1s; }
+.coupon-row:hover { background: #fafafa; }
+.coupon-row.inactive { opacity: 0.55; }
+.coupon-code { font-weight: 700; color: #FF6B35; letter-spacing: 1px; font-size: 0.92rem; }
+.coupon-discount { font-weight: 600; color: #2e7d32; }
+.toggle-btn { padding: 5px 12px; border: none; border-radius: 16px; font-size: 0.78rem; font-weight: 600; cursor: pointer; }
+.toggle-btn.active { background: #e8f5e9; color: #2e7d32; }
+.toggle-btn.paused { background: #FFF3E0; color: #E65100; }
+.del-coupon-btn { background: #fce4e4; color: #c62828; border: none; padding: 6px 12px; border-radius: 8px; font-size: 0.85rem; }
